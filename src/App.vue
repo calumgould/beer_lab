@@ -1,13 +1,15 @@
 <template>
   <div id="app">
-    <h1>cheeky</h1>
+    <h1>Beer List</h1>
+    <beers-list :beers="beers"></beers-list>
   </div>
 </template>
 
 <script>
 
-
+import BeersList from './components/BeersList.vue'
 export default {
+
   name: 'App',
   data(){
     return {
@@ -15,7 +17,7 @@ export default {
     }
   },
   components: {
-
+    'beers-list': BeersList
   },
   mounted(){
     fetch('https://api.punkapi.com/v2/beers')
