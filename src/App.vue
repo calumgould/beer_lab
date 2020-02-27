@@ -3,8 +3,14 @@
     <h1>Roosap's Beer Emporium</h1>
     <div class="main-container">
       <beer-detail :beer="selectedBeer"></beer-detail>
-      <beers-list :beers="beers"></beers-list>
-      <favs-list :favBeers="favBeers"></favs-list>
+      <div class="list">
+        <div class="left-list">
+          <beers-list :beers="beers"></beers-list>
+        </div>
+        <div class="right-list">
+          <favs-list :favBeers="favBeers"></favs-list>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -64,5 +70,15 @@ export default {
 h1 {
   font-size: 5em;
   padding-bottom: 0.5em;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+}
+
+.left-list, .right-list {
+  width: 50%;
+  text-align: center;
 }
 </style>

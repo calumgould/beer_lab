@@ -20,14 +20,19 @@ export default {
  li {
   list-style: none;
   display: block;
-  background: #fff;
+  background: #2c3e50;
   font-size: 16px;
   margin: 10px 0;
-  padding: 10px;
+  padding: 0.5em;
   cursor: pointer;
-  color: #555;
+  color: white;
   transition: 0.1s all ease-in;
-  border-radius: 3px;
+  border-radius: 4em;
+  margin: 0.5em 2em;
  }
- 
+
+ li:hover {
+   opacity: 80%;
+ }
+
 </style>

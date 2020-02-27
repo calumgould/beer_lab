@@ -4,9 +4,9 @@
       <h2><b>{{beer.name}}</b></h2>
       <div class="flex-wrapper">
         <div class="left">
-          <p class="top">{{beer.tagline}}</p>
+          <p class="top"><b>{{beer.tagline}}</b></p>
           <p>{{beer.description}}</p>
-          <p>%{{beer.abv}}</p>
+          <p>ABV: <b>%{{beer.abv}}</b></p>
           <button type="button" @click="handleFavAdd">Add to Favourites</button>
         </div>
         <div class="right">
@@ -93,8 +93,9 @@ button {
   margin: 2em 1em;
   font-size: 1em;
   border-radius: 4em;
-  background-color: pink;
+  background-color: #2c3e50;
   cursor: pointer;
+  color: white;
 }
 
 button:hover {
