@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-
+    <h1>cheeky</h1>
   </div>
 </template>
 
@@ -9,8 +9,18 @@
 
 export default {
   name: 'App',
+  data(){
+    return {
+      beers: []
+    }
+  },
   components: {
 
+  },
+  mounted(){
+    fetch('https://api.punkapi.com/v2/beers')
+    .then(res => res.json())
+    .then(data => this.beers = data)
   }
 }
 </script>
