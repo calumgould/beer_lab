@@ -1,5 +1,6 @@
 <template lang="html">
   <div class="beers-list">
+    <h2>Beers List</h2>
     <ul>
       <list-component v-for="(beer, index) in beers" :beer="beer" :key="index"></list-component>
     </ul>
