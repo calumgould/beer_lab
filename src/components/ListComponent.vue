@@ -20,7 +20,7 @@ export default {
  li {
   list-style: none;
   display: block;
-  background: #2c3e50;
+  background: #01c1e6;
   font-size: 16px;
   margin: 10px 0;
   padding: 0.5em;

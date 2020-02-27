@@ -6,7 +6,7 @@
         <div class="left">
           <p class="top"><b>{{beer.tagline}}</b></p>
           <p>{{beer.description}}</p>
-          <p>ABV: <b>%{{beer.abv}}</b></p>
+          <p>ABV: <b>{{beer.abv}}%</b></p>
           <button type="button" @click="handleFavAdd">Add to Favourites</button>
         </div>
         <div class="right">
@@ -93,7 +93,7 @@ button {
   margin: 2em 1em;
   font-size: 1em;
   border-radius: 4em;
-  background-color: #2c3e50;
+  background-color: #01c1e6;
   cursor: pointer;
   color: white;
 }

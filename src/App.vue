@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Roosap's Beer Emporium</h1>
+    <h1>Bevs Bevs Bevs</h1>
     <div class="main-container">
       <beer-detail :beer="selectedBeer"></beer-detail>
       <div class="list">
@@ -56,7 +56,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
 }
 
@@ -70,6 +69,7 @@ export default {
 h1 {
   font-size: 5em;
   padding-bottom: 0.5em;
+  color: #01c1e6;
 }
 
 .list {
