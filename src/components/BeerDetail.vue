@@ -68,7 +68,8 @@ export default {
 }
 
 .right img {
-  height: 500px;
+  min-height: 300px;
+  max-height: 500px;
   padding-right: 2em;
 }
 

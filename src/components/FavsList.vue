@@ -25,4 +25,8 @@ export default {
     list-style: none;
   }
 
+  ul li {
+    background-color: crimson;
+  }
+
 </style>
